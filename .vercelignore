@@ -1,0 +1,36 @@
+# Laravel di Vercel - file yang TIDAK ikut diunggah
+
+# File environment / rahasia (jangan pernah diunggah)
+.env
+.env.bak
+.env.backup
+.env.example
+.env.*
+!.env.example
+
+# Dependensi (diinstal ulang otomatis oleh vercel-php saat build)
+/vendor
+/node_modules
+/public/build
+/public/hot
+
+# Kontrol versi & tooling
+.git
+.gitignore
+.vercel
+Thumbs.db
+*.log
+
+# Artefak lokal
+/storage/logs/*
+/storage/framework/cache/*
+/storage/framework/sessions/*
+/storage/framework/views/*
+!storage/logs/.gitignore
+!storage/framework/cache/.gitignore
+!storage/framework/sessions/.gitignore
+!storage/framework/views/.gitignore
+
+# Uji coba (tidak dibutuhkan di production)
+/tests
+phpunit.xml
